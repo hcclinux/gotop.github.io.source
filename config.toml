@@ -1,4 +1,4 @@
-baseURL = "http://gotop.github.io/"
+baseURL = "http://hcclinx.github.io/"
 languageCode = "zh-CN"
 theme = "beautifulhugo"
 title = "My New Hugo Site"
