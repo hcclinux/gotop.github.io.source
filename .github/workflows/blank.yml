@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Github Pages #自动化的名称
+on:
+  push: # push 的时候触发
+     branches: # 那些分支需要触发
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest # 镜像市场
+    steps:
+      - name: checkout # 步骤的名称
+        uses: actions/checkout@v2 #软件市场的名称
+        with:
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Setup Hugo # 安装 Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest' # 使用Hugo最新版
+          extended: true
+      - name: Build # 编译
+        run: hugo --minify
+      - name: Deploy # 部署
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+         EXTERNAL_REPOSITORY: hcclinux/hcclinux.github.io
+         PUBLISH_BRANCH: main
+         PUBLISH_DIR: "./public"
+         commit_message: ${{ github.event.head_commit.message }}
