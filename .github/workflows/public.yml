@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: checkout # 步骤的名称
         uses: actions/checkout@v2 #软件市场的名称
-        with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Hugo # 安装 Hugo
         uses: peaceiris/actions-hugo@v2
         with:
