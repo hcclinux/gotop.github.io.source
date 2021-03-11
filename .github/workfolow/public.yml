@@ -23,7 +23,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-         EXTERNAL_REPOSITORY: hcclinux/gotop.github.io
+         EXTERNAL_REPOSITORY: hcclinux/hcclinux.github.io
          PUBLISH_BRANCH: main
          PUBLISH_DIR: "./public"
          commit_message: ${{ github.event.head_commit.message }}
