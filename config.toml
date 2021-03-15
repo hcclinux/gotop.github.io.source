@@ -1,4 +1,4 @@
-baseURL = "http://hcclinx.github.io/"
+baseURL = "http://hcclinux.github.io/"
 languageCode = "zh-CN"
 theme = "beautifulhugo"
 title = "gotop"
@@ -31,5 +31,5 @@ pygmentsCodefencesGuessSyntax = true
 
 [Author]
   name = "hom"
-  email = "hcclinx@gmail.com"
+  email = "hcclinux@gmail.com"
   github = "https://github.com/hcclinux"
