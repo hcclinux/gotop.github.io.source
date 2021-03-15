@@ -1,4 +1,4 @@
-baseURL = "http://hcclinux.github.io/"
+baseURL = "https://hcclinux.github.io/"
 languageCode = "zh-CN"
 theme = "beautifulhugo"
 title = "gotop"
