@@ -1,4 +1,35 @@
 baseURL = "http://hcclinx.github.io/"
 languageCode = "zh-CN"
 theme = "beautifulhugo"
-title = "My New Hugo Site"
+title = "gotop"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  subtitle = "Build a beautiful and simple website in minutes"
+  mainSections = ["post","posts"]
+  logo = "img/avatar-icon.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+
+[Author]
+  name = "hom"
+  email = "hcclinx@gmail.com"
+  github = "https://github.com/hcclinux"
