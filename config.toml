@@ -1,7 +1,8 @@
 baseURL = "https://hcclinux.github.io/"
-languageCode = "zh-CN"
+languageCode = "zh-cn"
 theme = "beautifulhugo"
 title = "gotop"
+paginate = 10
 metaDataFormat = "yaml"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
@@ -14,7 +15,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "Build a beautiful and simple website in minutes"
+  subtitle = "知识与技术地交织"
   mainSections = ["post","posts"]
   logo = "img/avatar-icon.png" # Expecting square dimensions
   favicon = "img/favicon.ico"
@@ -32,4 +33,4 @@ pygmentsCodefencesGuessSyntax = true
 [Author]
   name = "hom"
   email = "hcclinux@gmail.com"
-  github = "https://github.com/hcclinux"
+  github = "hcclinux"
